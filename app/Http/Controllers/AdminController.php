@@ -13,11 +13,86 @@ class AdminController extends Controller
         return view('admin.home');
     }
     public function ManageUsers(){
-        return view('admin.manage-users');
+        $users = [
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+            [
+                "profile" => "/assets/images/profile.jpg",
+                "username" => "Andhika W",
+            ],
+        ];
+        return view('admin.manage-users', compact('users'));
     }
     public function ArticeApproval(){
         return view('posts.new-article');
     }
+    
     public function NewArticle(){
         return view('posts.new-article');
     }
