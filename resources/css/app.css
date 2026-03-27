@@ -11,9 +11,7 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
-<<<<<<< HEAD
     --color-primary: #145011
-=======
     --font-poppins: 'Poppins', serif;
 
     --color-primary: #1F691A;
@@ -22,5 +20,4 @@
     --color-fitclub-red: #E63838;
     --color-fitclub-green: #62BE8B;
     --color-fitclub-yellow: #FFC300;
->>>>>>> 716c798e1972e32b49c3ee04fb9787be79ac1fce
 }

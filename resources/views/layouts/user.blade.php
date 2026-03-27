@@ -20,7 +20,7 @@
         @endif
     </head>
     <body class="w-full flex justify-between bg-white text-black">
-        <div style="background-image: url('{{ asset('images/background.jpg') }}')" class="flex flex-col h-screen sticky top-0 items-center w-22 p-5 rounded-br-2xl rounded-tr-2xl bg-cover bg-center">
+        <div style="background-image: url('{{ asset('images/background.jpg') }}')" class="flex flex-col h-screen stickyky top-0 items-center w-22 p-5 rounded-br-2xl rounded-tr-2xl bg-cover bg-center">
     
             <img src="/images/logo2.webp" alt="fitclub" class="max-w-16 mb-30">
             <x-nav-link href="/home" class="justify-center">

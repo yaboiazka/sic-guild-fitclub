@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite(['resources/css/app.css'])
-    <title>Home</title>
-</head>
-<body class="flex">
-        <nav class="fixed flex flex-col w-[80px] h-screen  items-center" style="background-image: url('{{ asset('image/background.png') }}')">
-            <div class="mt-[48px] size-14">
-                <img src="/image/logoputih.png" alt="">
-            </div>
-            <div class=" flex flex-col justify-center items-center gap-7 mt-[113px] ">
-                <a href="" class="p-2 border-2 rounded-2xl border-white"><img src="/image/home.png" alt="" class="w-6 h-auto"></a>
-                <a href=""><img src="/image/like.png" alt=""></a>
-                <a href=""><img src="/image/save.png" alt=""></a>
-                <a href=""><img src="/image/Plus.png" alt="" class="w-6 h-auto"></a>
-            </div>
-        </nav>
+@extends('layouts.user')
 
-        <section class="flex flex-col w-13/14 h-screen p-10 ml-[90px] ">
+@section('title', 'Manage Users')
+
+@section('content')
+        <section class="flex flex-col w-13/14 h-screen p-9 ml-[20px] ">
             <div class="flex items-center gap-27">
                 <div class="flex items-center w-full max-w-6xl border-2 rounded-full py-3 px-2.5 bg-gray ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6 text-gray-400">
@@ -47,7 +30,7 @@
                 </svg>
             </button>
             </div>
-         <div class="flex flex-col gap-4 w-full max-w-8xl mt-8">
+         <div class="flex flex-col gap-4 w-full max-w-10xl mt-8">
 
                 <div class="flex w-full bg-gray-300 ">
                     <img src="/image/yoga.png" alt="" class="w-48 h-auto">
@@ -137,5 +120,4 @@
                 
         </div>
         </section>
-</body>
-</html>
+@endsection

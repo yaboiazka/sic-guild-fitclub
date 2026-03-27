@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
      @vite(['resources/css/app.css'])
-    <title>Document</title>
+    <title>Signup</title>
 </head>
 <body>
     <section class="flex flex-row">
-        <div class="w-1/2 flex flex-col items-center justify-center " style="background-image: url('{{ asset('image/background.png') }}')">
+        <div class="w-1/2 h-screen flex flex-col items-center justify-center " style="background-image: url('{{ asset('image/background.png')}}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div>
                 <h1 class=" text-7xl ml-[-150px] text-white">HELLO</h1>
             </div>
@@ -25,12 +25,15 @@
         </div>
         <div class="w-1/2 h-screen justify-center items-center flex flex-col">
             <div>
-                <h1 class="mt-[-200px] font-bold text-primary text-6xl border-b-4 px-[50px]">SIGN UP</h1>
+                <h1 class="mt-[-150px] font-bold text-primary text-6xl border-b-4 px-[50px]">SIGN UP</h1>
             </div>
                 <div class="flex flex-col w-full max-w-sm gap-8">
                     <input type="email" placeholder="email" class="w-full border-b-4 py-2 border-primary bg-transparent">
                     <input type="password" placeholder="password" class="w-full border-b-4 py-2  border-primary bg-transparent">
                     <input type="password" placeholder="Confirmation Password" class="w-full border-b-4  py-2  border-primary bg-transparent">
+                </div>
+                <div>
+                    <button class="flex mt-[90px] ml-[300px] border-2 bg-primary font-bold px-4 py-3 text-white rounded-2xl">SIGN UP</button>
                 </div>
         </div>
     </section>
