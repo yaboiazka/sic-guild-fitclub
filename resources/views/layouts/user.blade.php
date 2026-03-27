@@ -22,8 +22,13 @@
             </style>
         @endif
     </head>
+<<<<<<< HEAD
+    <body class="w-full flex justify-between bg-white text-black">
+        <div style="background-image: url('{{ asset('images/background.jpg') }}')" class="flex flex-col h-screen stickyky top-0 items-center w-22 p-5 rounded-br-2xl rounded-tr-2xl bg-cover bg-center">
+=======
     <body class="w-full flex justify-between bg-white text-black font-poppins">
         <div style="background-image: url('{{ asset('assets/images/background.jpg') }}')" class="flex flex-col h-screen sticky top-0 items-center w-22 p-5 rounded-br-2xl rounded-tr-2xl bg-cover bg-center">
+>>>>>>> 16a2af30d73a7ff828f057d86379f4c82530082f
     
             <img src="assets/images/logo2.webp" alt="fitclub" class="max-w-16 mb-30">
             <x-nav-link href="/home" class="justify-center">

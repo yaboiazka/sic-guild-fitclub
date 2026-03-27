@@ -16,3 +16,4 @@ Route::get('/new-article', [AdminController::class, 'NewArticle']);
 Route::get('/', function () {
     return view('user.like-user');
 });
+
