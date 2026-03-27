@@ -23,12 +23,17 @@
         @endif
     </head>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <body class="w-full flex justify-between bg-white text-black">
         <div style="background-image: url('{{ asset('images/background.jpg') }}')" class="flex flex-col h-screen stickyky top-0 items-center w-22 p-5 rounded-br-2xl rounded-tr-2xl bg-cover bg-center">
 =======
     <body class="w-full flex justify-between bg-white text-black font-poppins">
         <div style="background-image: url('{{ asset('assets/images/background.jpg') }}')" class="flex flex-col h-screen sticky top-0 items-center w-22 p-5 rounded-br-2xl rounded-tr-2xl bg-cover bg-center">
 >>>>>>> 16a2af30d73a7ff828f057d86379f4c82530082f
+=======
+    <body class="w-full flex justify-between bg-white text-black font-poppins">
+        <div style="background-image: url('{{ asset('assets/images/background.jpg') }}')" class="flex flex-col h-screen sticky top-0 items-center w-22 p-5 rounded-br-2xl rounded-tr-2xl bg-cover bg-center">
+>>>>>>> 00ffb9f8e19cd8f734de37da2143596ad800d8cb
     
             <img src="assets/images/logo2.webp" alt="fitclub" class="max-w-16 mb-30">
             <x-nav-link href="/home" class="justify-center">
@@ -44,7 +49,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="size-5 fill-white"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM200 344l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>
             </x-nav-link>
         </div>
-        <div class="w-full left-0">
+        <div class="w-full left-0 px-8 py-4">
             @yield('content')
         </div>
     </body>
