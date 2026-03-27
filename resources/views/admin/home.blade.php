@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', 'Articles')
+
 @section('content')
     <x-sort-filters/>
     <div class="font-bold text-center">
