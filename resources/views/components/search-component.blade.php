@@ -1,4 +1,4 @@
-<div class="relative items-center gap-x-9" style="width: 1037px; height: 86px;">
+<div class="relative items-center gap-x-9" style="width: 1037px; height: 86px">
     
     <div class="relative inset-0">
         <svg width="1037" height="86" viewBox="0 0 1037 86" fill="none" xmlns="http://www.w3.org/2000/svg">
