@@ -250,6 +250,9 @@
                 </div>
             </main>
         </div>
+<<<<<<< HEAD
+        <x-detail-artikel/>
+=======
 
 <<<<<<< HEAD
         
