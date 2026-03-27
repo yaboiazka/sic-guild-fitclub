@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Manage Users')
+@section('title', 'Article approval')
 
 @section('content')
     <div class="flex mt-5">
@@ -49,9 +49,18 @@
         </svg>
     </div>
 
-    <div class="mt-3.5 mr-14 ">
-        <x-list-artikel-component/>
+    <div class="mt-3.5 mr-14 py-2">
+        @for ($i = 0; $i < 5; $i++)
+            <div class="flex h-66">
+                <div class="flex flex-row">
+                    <img src="/assets/yoga.jpg" alt="">
+                    
+                    <div class="px-8 bg-fitclub-dark-grey">
+                        <h2 class="mt-8 mb-8 text-4xl font-poppins font-semibold">Manfaat yoga di pagi hari untuk Hipertensi, bisa kontrol tekanan darah? Apa benar?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4"></div>
+        @endfor
     </div>
-    
-
 @endsection

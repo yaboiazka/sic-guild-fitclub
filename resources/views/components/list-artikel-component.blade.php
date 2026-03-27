@@ -1,10 +1,10 @@
-<div class="flex">
+<div class="flex h-66">
     <div class="flex flex-row">
         <img src="/assets/yoga.jpg" alt="">
         
-        <div class="px-8 bg-fitclub-dark-grey">
+        <div class="px-8 bg-fitclub-dark-grey py-7">
             <h2 class="mt-8 mb-8 text-4xl font-poppins font-semibold">Manfaat yoga di pagi hari untuk Hipertensi, bisa kontrol tekanan darah? Apa benar?</h2>
-            <div class="flex gap-8 mb-3 h-{264px}">
+            <div class="flex gap-8 mb-2">
                 <svg width="46" height="36" viewBox="0 0 46 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.65 1.83187e-06C5.66375 1.83187e-06 0 5.14181 0 11.4842C0 22.9685 14.95 33.4087 23 35.8371C31.05 33.4087 46 22.9685 46 11.4842C46 5.14181 40.3363 1.83187e-06 33.35 1.83187e-06C29.072 1.83187e-06 25.2885 1.92831 23 4.87976C21.8333 3.37155 20.2836 2.14067 18.4821 1.29128C16.6805 0.441878 14.68 -0.00103948 12.65 1.83187e-06Z" fill="#FF0000"/>
                 </svg>

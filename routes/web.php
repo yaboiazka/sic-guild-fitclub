@@ -13,5 +13,5 @@ Route::get('/new-article', [AdminController::class, 'NewArticle']);
 
 Route::get('/', function () {
 
-    return view('adminArticleApproval');
+    return view('adminManageArticle');
 });
