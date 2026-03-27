@@ -14,8 +14,8 @@ Make sure you have installed:
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/SIC-Unud/sic-tour-and-travel.git
-cd sic-tour-and-travel
+git clone https://github.com/yaboiazka/sic-guild-fitclub.git
+cd sic-guild-fitclub
 ```
 
 ### 2. Install PHP Dependencies
@@ -38,7 +38,7 @@ After copying the `.env` file, open it and configure your database settings:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=sic-tour-and-travel
+DB_DATABASE=sic-guild-fitclub
 DB_USERNAME=root
 DB_PASSWORD=
 ```
