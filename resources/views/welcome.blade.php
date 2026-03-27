@@ -251,6 +251,9 @@
             </main>
         </div>
 
+<<<<<<< HEAD
+        
+=======
         <div class="flex flex-cols justify-between p-8 w-full">
             <div style="background-image: url('{{ asset('images/background.jpg') }}')">
                 <h1>auoghrpioauwrhgbpawouirg;hoi</h1>
@@ -260,6 +263,7 @@
             </div>
         </div>
 
+>>>>>>> 716c798e1972e32b49c3ee04fb9787be79ac1fce
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
