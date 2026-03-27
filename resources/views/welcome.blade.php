@@ -254,6 +254,9 @@
         <x-detail-artikel/>
 =======
 
+<<<<<<< HEAD
+        
+=======
         <div class="flex flex-cols justify-between p-8 w-full">
             <div style="background-image: url('{{ asset('images/background.jpg') }}')">
                 <h1>auoghrpioauwrhgbpawouirg;hoi</h1>
