@@ -14,10 +14,6 @@ Route::get('/article-approval', [AdminController::class, 'home']);
 Route::get('/new-article', [AdminController::class, 'NewArticle']);
 
 Route::get('/', function () {
-<<<<<<< HEAD
-    return view('user.like-user');
+    return view('components.reject');
 });
-=======
-    return view('komentar');
-});
->>>>>>> 16a2af30d73a7ff828f057d86379f4c82530082f
+
