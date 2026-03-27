@@ -1,5 +1,5 @@
-<div class="flex h-66">
-    <div class="flex flex-row">
+<div class="flex mb-4">
+    <div class="flex flex-row ">
         <img src="/assets/yoga.jpg" alt="">
         
         <div class="px-8 bg-fitclub-dark-grey py-7">

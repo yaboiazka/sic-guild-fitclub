@@ -57,6 +57,9 @@
                     
                     <div class="px-8 bg-fitclub-dark-grey">
                         <h2 class="mt-8 mb-8 text-4xl font-poppins font-semibold">Manfaat yoga di pagi hari untuk Hipertensi, bisa kontrol tekanan darah? Apa benar?</h2>
+                        <div>
+                            <x-reject/>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -4,11 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>@yield('title') - Fit Club</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
@@ -19,10 +22,15 @@
             </style>
         @endif
     </head>
+<<<<<<< HEAD
     <body class="w-full flex justify-between bg-white text-black">
-        <div style="background-image: url('{{ asset('images/background.jpg') }}')" class="flex flex-col h-screen sticky top-0 items-center w-22 p-5 rounded-br-2xl rounded-tr-2xl bg-cover bg-center">
+        <div style="background-image: url('{{ asset('images/background.jpg') }}')" class="flex flex-col h-screen stickyky top-0 items-center w-22 p-5 rounded-br-2xl rounded-tr-2xl bg-cover bg-center">
+=======
+    <body class="w-full flex justify-between bg-white text-black font-poppins">
+        <div style="background-image: url('{{ asset('assets/images/background.jpg') }}')" class="flex flex-col h-screen sticky top-0 items-center w-22 p-5 rounded-br-2xl rounded-tr-2xl bg-cover bg-center">
+>>>>>>> 16a2af30d73a7ff828f057d86379f4c82530082f
     
-            <img src="/images/logo2.webp" alt="fitclub" class="max-w-16 mb-30">
+            <img src="assets/images/logo2.webp" alt="fitclub" class="max-w-16 mb-30">
             <x-nav-link href="/home" class="justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-5 fill-white"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M234.2 8.6c12.3-11.4 31.3-11.4 43.5 0L368 92.3 368 80c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 101.5 37.8 35.1c9.6 9 12.8 22.9 8 35.1S493.2 272 480 272l-16 0 0 176c0 35.3-28.7 64-64 64l-288 0c-35.3 0-64-28.7-64-64l0-176-16 0c-13.2 0-25-8.1-29.8-20.3s-1.6-26.2 8-35.1l224-208zM240 320c-26.5 0-48 21.5-48 48l0 96 128 0 0-96c0-26.5-21.5-48-48-48l-32 0z"/></svg>
             </x-nav-link>
