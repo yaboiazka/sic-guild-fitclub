@@ -1,5 +1,5 @@
 @extends('layouts.user')
 
 @section('content')
-    <x-list-artikel-component/>
+    <x-search-component/>
 @endsection
