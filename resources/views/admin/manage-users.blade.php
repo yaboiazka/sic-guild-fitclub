@@ -3,6 +3,8 @@
 @section('title', 'Manage Users')
 
 @section('content')
+    <x-search-component/>
+    <div class="mb-25"></div>
     <div class="grid grid-cols-3 justify-around gap-5">
         @foreach ($users as $user)
             <div class="flex flex-col bg-fitclub-grey items-center align-center rounded-2xl justify-between p-8">

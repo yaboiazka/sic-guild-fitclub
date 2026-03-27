@@ -47,7 +47,7 @@
                 <p>New Article</p>
             </x-nav-link>
         </div>
-        <div class="w-full left-0 mx-15">
+        <div class="w-full left-0 px-15 py-4">
             @yield('content')
         </div>
     </body>
