@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', 'New Article')
+
 @section('content')
     <div>
         <h1 class="font-bold text-[44px] mb-9.5">New Article</h1>
