@@ -14,5 +14,5 @@ Route::get('/article-approval', [AdminController::class, 'home']);
 Route::get('/new-article', [AdminController::class, 'NewArticle']);
 
 Route::get('/', function () {
-    return view('save-draft');
+    return view('komentar');
 });
