@@ -5,6 +5,7 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -22,6 +23,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'picutre',
+        'role',
     ];
 
     /**
@@ -45,5 +48,17 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+
+
+    public function likedPosts()
+    {
+        return $this->belongsToMany(post::class, 'likes', 'user_id', 'post_id')->withTimestamps(); // Karena di ERD ada created_at
+    }
+
+    public function savedPosts()
+    {
+        return $this->belongsToMany(post::class, 'saves', 'user_id', 'post_id')->withTimestamps();
     }
 }
