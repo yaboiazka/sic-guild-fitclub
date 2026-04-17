@@ -2,98 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
     public function home(){
-        return view('admin.home');
-    }
-    public function ManageArticles(){
-        return view('admin.home');
+        return view('home');
     }
     public function ManageUsers(){
-        $users = [
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-            [
-                "profile" => "/assets/images/profile.jpg",
-                "username" => "Andhika W",
-            ],
-        ];
+        $users = User::latest()->get();
         return view('admin.manage-users', compact('users'));
     }
     public function ArticeApproval(){
-        return view('posts.new-article');
-    }
-    
-    public function NewArticle(){
-        return view('posts.new-article');
+        return view('test');
     }
 }

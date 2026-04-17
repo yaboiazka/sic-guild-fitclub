@@ -1,4 +1,4 @@
-@extends('layouts.user')
+@extends('layouts.main')
 
 @section('content')
 <div class="p-[47px] text-[36px] font-bold bg-linear-to-r from-fitclub-green w-150 rounded-2xl ">

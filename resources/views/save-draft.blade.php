@@ -1,4 +1,4 @@
-@extends('layouts.user')
+@extends('layouts.main')
 
 @section('content')
     <div class="pr-68 pl-20 pt-10">
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                     </div>
-                    
+    
                 </div>
              @endfor
     </div>

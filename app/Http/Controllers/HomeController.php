@@ -2,18 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    public function home(){
+        return view('home');
+    }
+    public function like(){
+        return view('home.like');
+    }
+    public function save(){
+        return view('home.save');
+    }
     public function UserDetail(){
-        $userDetail = [
-            "profile" => "/assets/images/profile.jpg",
-            "username" => 'Andhika W',
-            "email" => 'andhikaw@gmail.com',
-            "phoneNumber" => '08977651431',
-            
-        ];
-        return view('user-detail', compact('userDetail'));
+        $users = User::latest()->get();
+        return view('user-detail', compact('users'));
     }
 }

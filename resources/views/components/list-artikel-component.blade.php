@@ -1,8 +1,8 @@
-<div class="flex mb-4">
-    <div class="flex flex-row ">
-        <img src="/assets/yoga.jpg" alt="">
-        
-        <div class="px-8 bg-fitclub-dark-grey py-7">
+<div class="flex flex-row mb-4 w-full">
+        <div class="w">
+            <img src="/assets/images/yoga.png" alt="">
+        </div>
+        <div class="px-8 bg-fitclub-grey py-7">
             <h2 class="mt-8 mb-8 text-4xl font-poppins font-semibold">Manfaat yoga di pagi hari untuk Hipertensi, bisa kontrol tekanan darah? Apa benar?</h2>
             <div class="flex gap-8 mb-2">
                 <svg width="46" height="36" viewBox="0 0 46 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,5 +23,4 @@
                 </svg>
             </div>
         </div>
-    </div>
 </div>
