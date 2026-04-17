@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\post;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -12,6 +13,11 @@ class UserController extends Controller
     {
         $users = User::latest()->get();
         return view('user.index', compact('users'));
+    }
+    public function show(User $user)
+    {
+        $posts = post::latest()->get();
+        return view('user.show', compact('user', 'posts'));
     }
 
     public function edit(User $user)

@@ -4,7 +4,7 @@ namespace App\Enums;
 enum Category: string
 {
     case LIFESTYLE = 'Lifestyle';
-    case FOOD = 'Healthy food recipes';
+    case FOOD = 'Healthy Food Recipes';
     case DIET = 'Diet';
     case DISEASE = 'Disease & Prevention';
     case MENTAL_HEALTH = 'Mental Health';

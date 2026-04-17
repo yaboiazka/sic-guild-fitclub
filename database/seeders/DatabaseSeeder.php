@@ -13,8 +13,8 @@ class DatabaseSeeder extends Seeder
     {
         $users = User::factory(10)->create();
         $testUser = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Werner Ziegler',
+            'email' => 'azkakagata@gmail.com',
             'role' => 'Admin'
         ]);
         $allUsers = $users->concat([$testUser]);

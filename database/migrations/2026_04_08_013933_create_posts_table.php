@@ -20,7 +20,7 @@ return new class extends Migration
             $table->boolean('draft_status');
             $table->boolean('approval');
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
-            $table->enum('category', ['Lifestyle', 'Healthy food recipes', 'Diet', 'Disease & Prevention', 'Mental Health']);
+            $table->enum('category', ['Lifestyle', 'Healthy Food Recipes', 'Diet', 'Disease & Prevention', 'Mental Health']);
             $table->timestamps();
         });
     }

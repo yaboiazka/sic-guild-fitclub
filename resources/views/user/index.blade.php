@@ -10,7 +10,7 @@
             <div class="flex flex-col bg-fitclub-grey items-center align-center rounded-2xl justify-between p-8">
                 <img src="{{ $user->profile}}" alt="Profile Not Found" class="rounded-full shadow-lg">
                 <h2 class="text-[40px]">{{ $user->email }}</h2>
-                <a href="/user-detail">
+                <a href="{{ route('dashboard.users.show', $user->id) }}">
                     <button class="bg-yellow-500 p-2 w-full rounded-lg text-white">Manage</button>
                 </a>
             </div>
