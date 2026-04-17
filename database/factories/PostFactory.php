@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Enums\Category;
 use App\Models\post;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -30,13 +31,7 @@ class PostFactory extends Factory
             'draft_status' => fake()->boolean(),
             'approval' => fake()->boolean(),
             'user_id' => User::factory(),
-            'category' => fake()->randomElement([
-                'Lifestyle', 
-                'Healthy food recipes', 
-                'Diet', 
-                'Disease & Prevention', 
-                'Mental Health'
-            ]),
+            'category' => fake()->randomElement(Category::cases()),
             'created_at' => now(),
             'updated_at' => now(),
         ];

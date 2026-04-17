@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\Category;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -18,6 +19,9 @@ class post extends Model
         'draft_status',
         'approval',
         'category',
+    ];
+    protected $casts = [
+        'category' => Category::class, // Casting ke Enum
     ];
 
     public function likes()

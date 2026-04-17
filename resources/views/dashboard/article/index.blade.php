@@ -8,9 +8,12 @@
             <h1 class="text-[128px]">67</h1>
             <h1 class="text-[64px]">Articles</h1>
         </div>
-        @for ($i = 0; $i < 5; $i++)
-             <x-list-artikel-component/>
-             <div class="mb-4"></div>
-        @endfor
+        @foreach ($posts as $post)
+            <x-list-artikel-component
+                description="{{ $post->description }}"
+                like="{{ $post->like }}"
+            />
+            <div class="mb-4"></div>
+        @endforeach
     </div>
 @endsection

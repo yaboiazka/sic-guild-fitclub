@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\post;
 use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function home(){
-        return view('home');
+        $posts = post::latest()->get();
+        return view('home', compact('posts'));
     }
     public function like(){
         return view('home.like');

@@ -6,9 +6,15 @@
     <x-search-component/>
     <x-sort-filters/>
     <div class="grid grid-cols-1">
-        @for ($i = 0; $i <10; $i++)
-        <div class="mb-4"></div>
-        @endfor
+        @foreach ($posts as $post)
+            @if ($post->draft_status == 0 && $post->approval == 1)
+            <x-list-artikel-component
+                description="{{ $post->description }}"
+                like="{{ $post->like }}"
+            />
+            <div class="mb-4"></div>
+            @endif
+        @endforeach
         <x-list-artikel-component/>
     </div>
 @endsection

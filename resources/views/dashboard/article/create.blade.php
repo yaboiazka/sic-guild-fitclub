@@ -9,15 +9,21 @@
             <label for="articleTitle" class="pl-4 font-semibold text-2xl">Article title</label>
             <input type="text" name="articleTitle" id="articleTitle" placeholder="Write your title here...." class="bg-fitclub-grey rounded-4xl w-full h-16 border-2 border-fitclub-dark-grey mb-5 text:mx-20">
         </div>
+
         <div>
-          <label for="category" class="pl-4 font-semibold text-2xl">Category</label>
+            <label for="category" class="pl-4 font-semibold text-2xl">Category</label>
             <div class="relative">
                 <select name="category" id="category" class=" bg-fitclub-grey block w-full mt-2.5 px-5 py-3 border-2 border-fitclub-dark-grey rounded-full mb-2">
                     <option value="" disabled>Select Category</option>
-                    <option value="" selected>Lifestyle</option>
+                    @foreach (\App\Enums\Category::cases() as $category)
+                        <option value="{{ $category->value }}" id="category" class="bg-fitclub-grey block w-full mt-2.5 px-5 py-3 border-2 border-fitclub-dark-grey rounded-full mb-2">
+                            {{ $category->label() }}
+                        </option>
+                    @endforeach
                 </select>
             </div>
         </div>
+        
         <div class="mb-2">
             <label for="description" class="pl-4 font-semibold text-2xl">Description</label>
             <textarea name="description" id="description" class="bg-fitclub-grey border-2 border-fitclub-dark-grey w-full rounded-4xl" cols="30" rows="10">
@@ -34,5 +40,9 @@
                 {{ old('content') }}
             </textarea>
         </div>
+    </div>
+    <div class="flex gap-4 flex-row-reverse mt-11">
+        <button type="submit" class="w-40 bg-fitclub-dark-green py-5 px-9 rounded-4xl text-white font-bold">Submit</button>
+        <a href="" class="w-40 bg-fitclub-green py-5 px-9 rounded-4xl text-white font-bold">Save Draft</a>
     </div>
 @endsection

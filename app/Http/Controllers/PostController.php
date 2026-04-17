@@ -33,7 +33,7 @@ class PostController extends Controller
             'content' => 'required|string',
             'description' => 'required|string',
             'picture' => 'required|image|mimes:jpg,png|max:1024',
-            'category' => 'required|exists:categories,id'
+            'category' => 'required'
         ]);
 
         if($request->hasFile('picture')) {

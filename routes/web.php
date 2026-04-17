@@ -11,7 +11,7 @@ use function Pest\Laravel\get;
 
 
 
-Route::get('/home', [HomeController::class, 'home']);
+Route::get('/', [HomeController::class, 'home']);
 
 Route::middleware('guest')->group(function () {
     Route::get('/login', [AuthController::class, 'login'])->name('login');
@@ -21,11 +21,10 @@ Route::middleware('guest')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-        Route::prefix('dashboard')->name('dashboard.')->group(function () {
+    Route::prefix('dashboard')->name('dashboard.')->group(function () {
         // namenya nanti akan jadi (dashboard.posts.index) dan seterusnya sesuai dengan pakem resource route
-        Route::resource('article', PostController::class);
+        Route::resource('article', PostController::class)->only(['create', 'edit']);
     });
-    Route::get('/new-article', [AdminController::class, 'NewArticle']);
     Route::get('/likes', [HomeController::class, 'like']);
     Route::get('/saved', [HomeController::class, 'save']);
     Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
@@ -37,6 +36,7 @@ Route::middleware('auth')->group(function () {
 Route::middleware('is_admin')->group(function() {
     Route::prefix('dashboard')->name('dashboard.')->group(function () {
         Route::resource('users', UserController::class)->only(['index', 'edit', 'update', 'destroy']);
+        Route::resource('article', PostController::class);
     });
 });
 
@@ -45,9 +45,3 @@ Route::middleware('is_admin')->group(function() {
     Route::get('/manage-users', [AdminController::class, 'ManageUsers']);
     Route::get('/manage-articles', [AdminController::class, 'ManageArticles']);
 });
-
-
-Route::get('/', function () {
-    return view('home');
-});
-

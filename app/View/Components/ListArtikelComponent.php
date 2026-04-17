@@ -11,7 +11,11 @@ class ListArtikelComponent extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(
+        public $picture = "/assets/images/yoga.png",
+        public $like = 0,
+        public $saved = 0,
+        public $description = "Manfaat yoga di pagi hari untuk Hipertensi, bisa kontrol tekanan darah? Apa benar?")
     {
         //
     }
