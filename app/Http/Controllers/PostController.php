@@ -12,7 +12,6 @@ class PostController extends Controller
     public function index()
     {
         $posts = post::latest()->get();
-        dd($posts);
         return view('dashboard.article.index', compact('posts'));
     }
 
@@ -52,7 +51,6 @@ class PostController extends Controller
      */
     public function show(post $post)
     {
-        dd($post);
         return view('dashboard.article.show', compact('post'));
     }
 

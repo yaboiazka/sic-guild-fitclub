@@ -36,12 +36,8 @@ Route::middleware('auth')->group(function () {
 Route::middleware('is_admin')->group(function() {
     Route::prefix('dashboard')->name('dashboard.')->group(function () {
         Route::resource('users', UserController::class)->only(['index', 'edit', 'update', 'destroy']);
-        Route::resource('article', PostController::class);
+        Route::resource('article', PostController::class)->only(['index', 'edit', 'update', 'destroy', 'show']);
     });
+    Route::get('/article-approval', [AdminController::class, 'ArticeApproval']);
 });
 
-Route::middleware('is_admin')->group(function() {
-    Route::get('/article-approval', [AdminController::class, 'ArticeApproval']);
-    Route::get('/manage-users', [AdminController::class, 'ManageUsers']);
-    Route::get('/manage-articles', [AdminController::class, 'ManageArticles']);
-});
