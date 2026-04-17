@@ -5,16 +5,14 @@
 @section('content')
     <x-search-component/>
     <x-sort-filters/>
-    <div class="grid grid-cols-1">
+    <div class="flex flex-col gap-4 max-w-8xl mt-8">
         @foreach ($posts as $post)
             @if ($post->draft_status == 0 && $post->approval == 1)
             <x-list-artikel-component
                 description="{{ $post->description }}"
                 like="{{ $post->like }}"
             />
-            <div class="mb-4"></div>
             @endif
         @endforeach
-        <x-list-artikel-component/>
     </div>
 @endsection
